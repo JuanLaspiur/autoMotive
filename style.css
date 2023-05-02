@@ -50,45 +50,80 @@ background-size: cover;
     
 }
 
-header{
+.header{
 max-width: var(--max-with);
 display: flex;
-justify-content: space-between;
-align-items: center;
 
 }
 
 .logo{
-display: flex;
+display: inline-block;
 align-items: center;
-font-size: 42px;
+font-size: 30px;
 font-weight: bold;
+margin-right: 19%;
 }
 
 .logo_img{
+display: inline-block;
 margin-right: .5rem;
 
 }
 
 .menu-list{
+display: inline-block;    
 margin: 0;
+
 }
 
 .menu-list_item{
 display: inline-block;
-margin: 0 .5rem;
-font-size: 20px;
+margin: 0 .9rem;
+font-size: 12px;
 }
 
-/*
-.menu-list_item: last-child{
+
+.menu-list_item last-child{
 margin:0;
 }
-*/
+
 
 .book-appointment{
 background-color: var(--acent-color);
-padding:  1rem 2rem;
+padding:  .3rem .8rem;
+font-size: smaller;
+
+}
+
+
+
+/*content*/
+
+.content{
+max-width: var(--max-with);
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 10%;
+
+
+}
+
+.content h2{
+font-size: smaller;
+
+}
+
+.footer{
+font-size: xx-small;    
+display: flex;
+padding: 4%;
+}
+
+.footer-witgets{
+padding-left: 13%;
 
 
 }

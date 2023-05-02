@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root{
+--max-with:1280px;
+--min-with:320px;
+--acent-color:#00C2FF;
+
+
+}
+*{
+box-sizing: border-box;
+}
+html, body{
+height: 100%;
+margin: 0;
+padding: 0;
+background-color: black;
+color: white;
+font-family:'Roboto', sans-serif;
+
+
+}
+
+
+a{
+text-decoration: none;
+color: white;
+
+
+}
+
+/*conteiner*/
+
+.conteiner{
+height: 100vh;
+display:flex;
+flex-direction: column;
+min-width: var(--min-with);
+background-image: url(https://www.solofondos.com/wp-content/uploads/2016/01/Fondos-de-pantalla-4k-coches-1024x576.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.header, .content, .footer{
+
+    width: 100%;
+    margin: 0, auto;
+    padding: irem;
+    
+
+
+}

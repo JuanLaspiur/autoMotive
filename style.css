@@ -99,17 +99,35 @@ font-size: smaller;
 
 /*content*/
 
+
 .content{
 max-width: var(--max-with);
+max-height: 100vh;
 flex-grow: 1;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 padding: 10%;
+position: relative;
 
 
 }
+
+.slideButton{
+position: absolute;
+top:40%;
+transform: translateY(-50%);
+cursor: pointer;    
+}
+.prevSlide{
+ left: 2rem;   
+}
+.nextSlide{
+right: 3rem;
+
+}
+
 
 .content h2{
 font-size: smaller;
@@ -119,11 +137,123 @@ font-size: smaller;
 .footer{
 font-size: xx-small;    
 display: flex;
-padding: 4%;
+
 }
 
 .footer-witgets{
 padding-left: 13%;
+}
+
+h1, .footer-widgets_title{
+color:var(--acent-color);
+
+}
+
+/*responsible*/
+
+/*Extra-Large*/@media 	(max-width:1399px){
+    .logo{
+        display: inline-block;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 5%;
+        }
+
+        .footer{
+            font-size: xx-small;    
+            display: flex;
+            padding: 4%;
+            padding-top: 5%;
+        
+        }
+
+
+
+
+}
+
+/*Large*/@media 	(max-width:1199px){}
+
+/*Medium*/@media 	(max-width:991px){}
+
+
+
+/*Small*/@media 	(max-width:767px){
+
+    .logo{
+        display: inline-block;
+        align-items:normal;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 0%;
+        }
+
+        .footer{
+            font-size: xx-small;    
+            display: flex;
+            padding: 4%;
+            padding-top: 15%;
+        
+        }
+
+
+
+}
+
+
+/*X-Small*/	@media	(max-width:599px){
+    .logo{
+        display: inline-block;
+        align-items:normal;
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 0%;
+        }
+
+        .footer{
+            font-size: xx-small;    
+            display: flex;
+            padding: 4%;
+            padding-top: 20%;
+        
+        }   
+
+
+
+}
+
+
+@media	(max-width:561px){
+    .logo{
+        display: inline-block;
+        align-items:normal;
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 0%;
+        }
+
+        .footer{
+            font-size: xx-small;    
+            display: flex;
+            padding: 4%;
+            padding-top: 20%;
+        
+        }   
+      
+            
+            .menu-list_item{
+            display: inline-block;
+            margin: 0 .3rem;
+            font-size: 10px;
+            }
+            .footer{
+                font-size: xx-small;    
+                display: flex;
+                padding: 4%;
+                padding-top: 35%;
+            
+            } 
 
 
 }
